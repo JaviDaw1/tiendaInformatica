@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tiendainformatica.MainController">
+   <center>
+      <StackPane>
+         <Text text="Bienvenido a TECNOJAVOTTO" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #0077cc;" />
+      </StackPane>
+   </center>
+
+   <bottom>
+      <HBox style="-fx-background-color: #333333; -fx-padding: 10px; -fx-alignment: center;">
+         <Text text="© 2025 TECNOJAVOTTO - Todos los derechos reservados" fill="white" />
+      </HBox>
+   </bottom>
+
+   <top>
+      <HBox spacing="20" style="-fx-background-color: #0077cc; -fx-padding: 20px; -fx-alignment: center;">
+         <Button text="Generar Informe por Categoría" onAction="#goToCategoriaPage" style="-fx-font-size: 11px; -fx-background-color: #005f99; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-border-radius: 5px;" />
+         <Button text="Generar Informe por Precio y Stock" onAction="#goToPrecioStockPage" style="-fx-font-size: 11px; -fx-background-color: #005f99; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-border-radius: 5px;" />
+      </HBox>
+   </top>
+</BorderPane>

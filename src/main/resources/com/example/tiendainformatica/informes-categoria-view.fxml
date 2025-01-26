@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:controller="com.example.tiendainformatica.HelloController" xmlns:fx="http://javafx.com/fxml/1">
+    <!-- Contenedor principal VBox con ajuste automático al espacio -->
+    <VBox alignment="CENTER" spacing="20" style="-fx-padding: 20px; -fx-background-color: #f4faff;" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+        <!-- Sección de Controles principales (Label, ComboBox, Button) -->
+        <Label text="Generar Informe por Categoría" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #0077cc;" />
+        <ComboBox fx:id="comboBox" promptText="Seleccionar Categoría" prefWidth="250" style="-fx-background-color: #e0f4ff; -fx-border-color: #0077cc; -fx-border-radius: 5px;" />
+        <Button text="Generar Informe" onAction="#jButtonActionPerformed" style="-fx-background-color: #0077cc; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-border-radius: 5px; -fx-font-size: 14px;" />
+    </VBox>
+
+    <!-- Pie de página en la parte inferior, ajustado a la ventana -->
+    <HBox style="-fx-background-color: #333333; -fx-padding: 10px; -fx-alignment: center;" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        <Text text="© 2025 TECNOJAVOTTO - Todos los derechos reservados" fill="white" />
+    </HBox>
+</AnchorPane>
